@@ -1,0 +1,46 @@
+{
+  "code": 200,
+  "msg": {
+    "list": [
+      {
+        "id": 1,
+        "systemName": "watermark",
+        "moduleName": null,
+        "apiPath": "Watermark/WatermarkOnPhoenixService/getFlashGroupByUserId_WWW3_WATERMARK_019",
+        "dataType": null,
+        "resultLimit": null,
+        "status": null,
+        "createTime": 1509016873000,
+        "updateTime": 1509016873000,
+        "excuteSql": " SELECT /*+INDEX(USER_LOGIN USER_LOGIN_UID_IND)*/  'Flash' AS Type, Flash AS Computer, MAX(CreationDate) AS MaxCreationDate,  count(*) counts FROM USER_LOGIN WHERE UserId>0 AND UserId = ? GROUP BY Flash ORDER BY MaxCreationDate DESC LIMIT 2001"
+      },
+      {
+        "id": 2,
+        "systemName": "watermark",
+        "moduleName": null,
+        "apiPath": "Watermark/WatermarkOnPhoenixService/getLastWatermarkByCookie_WWW3_WATERMARK_004",
+        "dataType": null,
+        "resultLimit": null,
+        "status": null,
+        "createTime": 1509016874000,
+        "updateTime": 1509016874000,
+        "excuteSql": "SELECT  /*+INDEX(USER_LOGIN USER_LOGIN_COOKIE_IND)*/   CreationDate AS CreationDate ,  UserId , IP AS IP FROM  USER_LOGIN WHERE  UserId>0 AND  Cookie = ?  ORDER BY CreationDate DESC limit 500"
+      },
+      {
+        "id": 3,
+        "systemName": "watermark",
+        "moduleName": null,
+        "apiPath": "Watermark/WatermarkOnPhoenixService/getAssociatedInfoCountByDate_USERASS_009",
+        "dataType": null,
+        "resultLimit": null,
+        "status": null,
+        "createTime": 1509016876000,
+        "updateTime": 1509016876000,
+        "excuteSql": "SELECT  /*+INDEX(USER_LOGIN USER_LOGIN_COOKIE_IND)*/ COUNT(DISTINCT UserId) temp FROM USER_LOGIN WHERE Cookie IN ( SELECT /*+INDEX(USER_LOGIN USER_LOGIN_UID_IND)*/ DISTINCT Cookie FROM USER_LOGIN WHERE UserId > 0 AND UserId = ? AND Cookie > 0 ) AND UserId > 0 AND UserId !=? AND CreationDate >= TO_DATE (?)"
+      }
+    ],
+    "totalCount": 3,
+    "page": 1,
+    "pageSize": 10
+  }
+}

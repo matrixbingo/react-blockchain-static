@@ -1,0 +1,38 @@
+{
+  "code": 200,
+  "msg": [
+    {
+      "header": "BlockChain-BP",
+      "className": "fa-dashboard",
+      "items": [
+        {
+          "className": "fa-laptop",
+          "title": "常用功能",
+          "href": "",
+          "children": [
+            {
+              "title": "区块信息",
+              "href": "dbinfo"
+            },
+            {
+              "title": "积分查看",
+              "href": "apiSystem"
+            },
+            {
+              "title": "积分转账",
+              "href": "apiConfig"
+            },
+            {
+              "title": "常用信息",
+              "href": "apiConfig"
+            },
+            {
+              "title": "区块信息",
+              "href": "apiConfig"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

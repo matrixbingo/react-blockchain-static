@@ -1,0 +1,110 @@
+{
+  "code": 200,
+  "msg": [
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 9,
+        "DX_M_U_Mobile": 43
+      },
+      "ts": 1501577760000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 6,
+        "DX_M_U_Mobile": 53
+      },
+      "ts": 1501577820000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 11,
+        "DX_M_U_Mobile": 55
+      },
+      "ts": 1501577880000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 14,
+        "DX_M_U_Mobile": 39
+      },
+      "ts": 1501577940000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 14,
+        "DX_M_U_Mobile": 56
+      },
+      "ts": 1501578000000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 13,
+        "DX_M_U_Mobile": 52
+      },
+      "ts": 1501578060000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 9,
+        "DX_M_U_Mobile": 59
+      },
+      "ts": 1501578120000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 8,
+        "DX_M_U_Mobile": 46
+      },
+      "ts": 1501578180000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 10,
+        "DX_M_U_Mobile": 59
+      },
+      "ts": 1501578240000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 9,
+        "DX_M_U_Mobile": 44
+      },
+      "ts": 1501578300000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 10,
+        "DX_M_U_Mobile": 50
+      },
+      "ts": 1501578360000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 13,
+        "DX_M_U_Mobile": 49
+      },
+      "ts": 1501578420000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 9,
+        "DX_M_U_Mobile": 56
+      },
+      "ts": 1501578480000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 22,
+        "DX_M_U_Mobile": 55
+      },
+      "ts": 1501578540000
+    },
+    {
+      "metrics": {
+        "DX_M_U_ZM_Confirm": 15,
+        "DX_M_U_Mobile": 48
+      },
+      "ts": 1501578600000
+    }
+  ]
+}

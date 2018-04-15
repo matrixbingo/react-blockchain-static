@@ -1,0 +1,66 @@
+{
+  "spider": {
+    "thread": 1,
+    "startUrl": "https://www.yirendai.com/finance/view/bf4661c12eed415497ddc8ee20625861",
+    "downloader": "",
+    "processer": "XPathWebSinglePageProcess",
+    "siteid": "50",
+    "pipeline": [
+      "mySqlArticlePipeline"
+    ]
+  },
+  "site": {
+    "domain": "www.yirendai.com/finance",
+    "retry": 3,
+    "sleepTime": 3000,
+    "headers": [
+      {
+        "name": "Content-Type:",
+        "value": "application\/json"
+      }
+    ],
+    "cookies": [
+      {
+        "name": "mm_session",
+        "value": "application\/json"
+      }
+    ],
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31"
+  },
+  "rule": {
+    "cyclepath": [
+      "http://www.wdzj.com/news/gundong",
+      "http://www.wdzj.com/news/gundong/p2.html"
+    ],
+    "detailregex": "http://www\\.wdzj\\.com\/\\S+\/\\S+\/\\S+\\.html",
+    "listregex": "http://www\\.wdzj\\.com\/news\/gundong\/p\\d+\\.html",
+    "itemxpath": "//ul[@class='zllist']/li",
+    "listxpath": "//div[@class='text']/h3",
+    "loadlistxpath": "//div[@class='pagebox']",
+    "detailxpath": [
+      {
+        "name": "title",
+        "reg": "",
+        "value": "//div[@class='show-box']/h1[@class='s-title']/text()"
+      },
+      {
+        "name": "author",
+        "reg": "",
+        "value": "//div[@class='s-bq']/span[3]/text()"
+      },
+      {
+        "reg": "",
+        "value": "//div[@class='s-bq']/span[1]/text()",
+        "name": "publicTime",
+        "simpleDateFormat": "yyyy-MM-dd HH:mm:ss"
+      },
+      {
+        "name": "content",
+        "reg": "",
+        "value": "//div[@class='c-cen']"
+      }
+    ],
+    "itemImagexpath": "//div[@class='img']/a/img/@src"
+  },
+  "isCircle": true
+}
